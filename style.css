@@ -1,48 +1,71 @@
+*{
+    color: #f7ffff;
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;/*width not required because already 100% for div*/
-    background-color: #d0e9ff;
+    background-color: #1c1726;
     margin: 0;
 }
-.calculator{
+.Container{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
-    padding: 25px;
-    border-radius: 10px;
-    background-color: #384450;
-    box-shadow: 0 0 10px rgba(0,0,0,1);
+    justify-content: center;
+}
+.calculator{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ResultContainer{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 input{
     text-align: right;
-    font-size: 80px;
-    height: 25%;
-    width: 320px;
+    font-size: 50px;
+    height: 80px;
+    width: 90%;
     color: #f7ffff;
-    background-color: transparent;
+    background-color: #5f5b67;
     border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 300px #918e97, inset 0px 0px 5px #918e97;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
-.rows{
+.buttonRowsContainer{
+    height: 400px;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
-button{
-    height: 70px;
-    width: 70px;
+.rows{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+.rows button{
+    height: 60px;
+    width: 75px;
     font-size: 20px;
     cursor: pointer;
-    color: #f7ffff;
-    background-color: transparent;
+    background-color: #312c3a;
+    border: none;
     border-radius: 15px;
-    /* border: none;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); */
-
+    box-shadow: 0px 0px 5px black, inset 0px 0px 10px #918e97;
+}
+.rows button:active{
+    box-shadow:0px 0px 10px #918e97;
 }
 .bluetext{
-    color: #4df8ce;
+    color: #47d5a6;
     font-weight: bold;
 }

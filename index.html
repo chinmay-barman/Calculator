@@ -7,37 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" disabled>
-    <div class="rows">
-      <button onclick="allClearFromDisplay()" class="bluetext">AC</button>
-      <button onclick="deleteLast()" class="bluetext">DEL</button>
-      <button onclick="appendToDisplay('%')" class="bluetext">%</button>
-      <button onclick="appendToDisplay('/')" class="bluetext">/</button>
-    </div>
-    <div class="rows">
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('*')" class="bluetext">X</button>
-    </div>
-    <div class="rows">
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('-')" class="bluetext">-</button>
-    </div>
-    <div class="rows">
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('+')" class="bluetext">+</button>
-    </div>
-    <div class="rows">
-      <button onclick="appendToDisplay('00')">00</button>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="calculate()" class="bluetext">=</button>
+  <div class="Container">
+    <div class="calculator">
+      <div class="ResultContainer">
+        <input type="text" id="display" disabled>
+      </div>
+      <div class="buttonRowsContainer">
+        <div class="rows">
+          <button onclick="allClearFromDisplay()" class="bluetext">AC</button>
+          <button onclick="deleteLast()" class="bluetext">DEL</button>
+          <button onclick="appendToDisplay('%')" class="bluetext">%</button>
+          <button onclick="appendToDisplay('/')" class="bluetext">/</button>
+        </div>
+        <div class="rows">
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('*')" class="bluetext">X</button>
+        </div>
+        <div class="rows">
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('-')" class="bluetext">-</button>
+        </div>
+        <div class="rows">
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('+')" class="bluetext">+</button>
+        </div>
+        <div class="rows">
+          <button onclick="appendToDisplay('00')">00</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="calculate()" class="bluetext">=</button>
+        </div>
+      </div>
     </div>
   </div>
   <script src="Logic.js"></script>
