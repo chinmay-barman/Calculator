@@ -1,83 +1,66 @@
 *{
-    color: #f7ffff;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1c1726;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f7ffff;
 }
 .Container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #151118;
 }
 .calculator{
-    width: 100%;
-    max-width: 320px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    justify-content: space-around;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
 }
 .ResultContainer{
-    width: 100%;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-}
-input{
-    text-align: right;
-    font-size: 50px;
-    height: 80px;
-    width: 90%;
-    color: #f7ffff;
-    background-color: #5f5b67;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 300px #918e97, inset 0px 0px 5px #918e97;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-}
-.buttonRowsContainer{
-    flex: 1;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 30%;
+    width: 100%;
+    margin: auto;
+}
+input{
+    font-size: 3em;
+    text-align: right;
+    height: 20vmin;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    background-color: #938f9a;
+    box-shadow: inset 0px 0px 20px #23005f;
+}
+.buttonRowsContainer{
+    margin: auto;
+    height: 50%;
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .rows{
-    width: 100%;
+    gap: 5px;
+    flex: 1;
     display: flex;
     justify-content: space-between;
 }
 .rows button{
+    font-size: 1em;
+    font-weight: bold;
     flex: 1;
-    margin: 5px;
-    min-height: 55px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #312c3a;
     border: none;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px black, inset 0px 0px 10px #918e97;
+    background-color: #221e27;
+    color: #ceb5fb;
+    box-shadow: 0px 0px 15px #23005f, inset 0px 0px 6px #ceb5fb;
 }
 .rows button:active{
-    box-shadow:0px 0px 10px #918e97;
-}
-.bluetext{
-    color: #47d5a6;
-    font-weight: bold;
-}
-@media (min-width: 768px){
-    .calculator{
-        max-width: 420px;
-    }
-    .rows button{
-        font-size: 25px;
-    }
+    background-color: #2a2335; 
+    box-shadow: 0px 0px 10px #ceb5fb, inset 0px 0px 10px #23005f;
 }
